@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <title>Tic-Tac-Toe Deluxe</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div id="game">
+    <h1>Tic-Tac-Toe Deluxe 🎮</h1>
+    <div id="menu">
+      <button onclick="startGame('2P')">2 Joueurs</button>
+      <button onclick="startGame('easy')">IA Facile</button>
+      <button onclick="startGame('hard')">IA Difficile</button>
+      <button onclick="startGame('impossible')">IA Impossible</button>
+    </div>
+    <div id="board" class="hidden"></div>
+    <p id="message"></p>
+    <button id="restart" class="hidden" onclick="restartGame()">Rejouer</button>
+  </div>
+
+  <audio id="sound-move" src="sound/click.mp3"></audio>
+  <audio id="sound-win" src="sound/win.mp3"></audio>
+
+  <script src="script.js"></script>
+</body>
+</html>
